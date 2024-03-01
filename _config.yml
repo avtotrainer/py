@@ -1,6 +1,21 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "ჩემი საიტი"
+email: trainer@din.ge
+description: >- # ეს არის საიტის აღწერ.
+  ეს საიტი შესრულებულია Jekyll-ზე, მისი კონტენტი შეეხება Python-ის სწავლებას.
+baseurl: "" # Поддиректория вашего сайта, если есть. Например, "/blog" если сайт находится по адресу example.com/blog
+url: "https://py.din.ge" # Основной URL вашего сайта
+github_username:  avtotrainer
+
+# Сборка
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Исключения
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 paginate: 5
 paginate_path: "page:num"
