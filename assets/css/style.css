@@ -1,6 +1,3 @@
-@import url('base.css');
-
-
 ---
 layout: null
 sitemap: false
@@ -8,6 +5,7 @@ sitemap: false
 
 $mobile-break: 700px;
 
+@import url('base.css');
 @import "typography";
 @import "layout";
 @import "forms";
