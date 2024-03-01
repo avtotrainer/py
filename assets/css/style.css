@@ -5,65 +5,11 @@ sitemap: false
 
 $mobile-break: 700px;
 
-@import url('base.css');
+@import "base.css";
 @import "typography";
 @import "layout";
 @import "forms";
 @import "cloudcannon";
+@import "my_menu";
 
 
-
-body {
-    background-color: #f8f8f8;
-    color: #333;
-    font-family: Arial, sans-serif;
-}
-
-.header {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Добавьте остальные стили здесь */
-/* Стили для навигационного меню */
-nav ul.menu {
-    list-style-type: none; /* Убираем маркеры списка */
-    margin: 0; /* Обнуляем внешние отступы */
-    padding: 0; /* Обнуляем внутренние отступы */
-    display: flex; /* Используем flexbox для выравнивания элементов в ряд */
-    align-items: center; /* Выравниваем элементы по центру по вертикали */
-    justify-content: center; /* Центрируем элементы по горизонтали */
-}
-
-nav ul.menu li {
-    margin: 0 10px; /* Добавляем немного маржина по бокам для разделения пунктов меню */
-}
-
-nav ul.menu li a {
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
-    color: #333; /* Цвет текста ссылок */
-    font-weight: bold; /* Делаем текст жирным */
-}
-
-nav ul.menu li a:hover,
-nav ul.menu li a:focus {
-    color: #007bff; /* Цвет текста ссылок при наведении или фокусе */
-}
-
-
-
-
-/* Стиль для неактивной ссылки в меню */
-.current {
-    color: #999999; /* Серый цвет для неактивной ссылки */
-    cursor: default; /* Курсор в виде стрелки, указывающий на то, что ссылка неактивна */
-    text-decoration: none; /* Убираем подчеркивание текста */
-}
-
-/* Выделение для активной ссылки (если потребуется) */
-.current:hover {
-    color: #999999; /* Тот же серый цвет, чтобы при наведении цвет не менялся */
-    cursor: default; /* Поддерживаем курсор стрелкой */
-}
