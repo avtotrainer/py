@@ -1,10 +1,11 @@
 <header>
     <h1>{{ title }}</h1>
     <nav>
-        <ul>
-            <li><a href="{{ '/' | relative_url }}">ᲛᲗᲐᲕᲐᲠᲘ</a></li>
-            <li><a href="{{ '/about' | relative_url }}">ᲩᲕᲔᲜᲡ ᲨᲔᲡᲐᲮᲔᲑ</a></li>
-            <li><a href="{{ '/contact/' | relative_url }}">ᲙᲝᲜᲢᲐᲥᲢᲘ</a></li>
+        <ul class="menu">
+          <li><a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}current{% endif %}">ᲛᲗᲐᲕᲐᲠᲘ</a></li>
+          <li><a href="{{ '/about/' | relative_url }}" class="{% if page.url == '/about/' %}current{% endif %}">ᲩᲕᲔᲜᲡ ᲨᲔᲡᲐᲮᲔᲑ</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}" class="{% if page.url == '/contact/' %}current{% endif %}">ᲙᲝᲜᲢᲐᲥᲢᲘ</a></li>
+
         </ul>
     </nav>
 </header>

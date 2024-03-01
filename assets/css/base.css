@@ -1,0 +1,58 @@
+/* Обнуление отступов и маржинов для всех элементов */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Установка базовых стилей для документа */
+html {
+  font-size: 16px; /* Базовый размер шрифта */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Базовый шрифт */
+  line-height: 1.6; /* Базовая высота строки */
+  color: #333; /* Базовый цвет текста */
+  background-color: #fff; /* Базовый цвет фона */
+}
+
+/* Стили для основных секций */
+header,
+footer,
+nav,
+main,
+section,
+article,
+aside {
+  display: block;
+}
+
+/* Обнуление стилей списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Обнуление стилей ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Обнуление стилей таблиц */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Обнуление стилей изображений и объектов, чтобы они не выходили за рамки контейнеров */
+img,
+object,
+embed,
+video {
+  max-width: 100%;
+  height: auto;
+}
